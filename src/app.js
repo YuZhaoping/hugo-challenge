@@ -1,6 +1,8 @@
-import React from 'react';
+//import React from 'react';
+//import ReactDOM from 'react-dom';
 
-const DemoApp = () => {
+
+function DemoApp() {
   const [count, setCount] = React.useState(0);
 
   return (
@@ -11,6 +13,7 @@ const DemoApp = () => {
       </button>
     </div>
   );
-};
+}
 
-export default DemoApp;
+ReactDOM.render(React.createElement(DemoApp),
+  document.getElementById("root"));
